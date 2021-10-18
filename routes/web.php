@@ -10,7 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Listing;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/listing/{listing}', 'ListingController@get_listing_web');
